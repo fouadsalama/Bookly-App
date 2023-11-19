@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class CustomBookListViewItem extends StatelessWidget {
-  const CustomBookListViewItem({super.key});
-
+class CustomBookImage extends StatelessWidget {
+  const CustomBookImage({super.key, required this.imageUrl});
+  final String imageUrl;
   @override
   Widget build(BuildContext context) {
     return AspectRatio(
@@ -10,10 +10,9 @@ class CustomBookListViewItem extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(16),
-            image: const DecorationImage(
+            image: DecorationImage(
               fit: BoxFit.fill,
-              image: NetworkImage(
-                  'https://thumbs.dreamstime.com/b/old-book-flying-letters-magic-light-background-bookshelf-library-ancient-books-as-symbol-knowledge-history-218640948.jpg'),
+              image: NetworkImage(imageUrl),
             ),
           ),
         ));

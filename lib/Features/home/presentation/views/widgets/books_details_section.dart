@@ -17,7 +17,10 @@ class BooksDetailsSection extends StatelessWidget {
           padding: EdgeInsets.symmetric(
             horizontal: width * 0.17,
           ),
-          child: const CustomBookListViewItem(),
+          child: const CustomBookImage(
+            imageUrl:
+                'https://thumbs.dreamstime.com/b/old-book-flying-letters-magic-light-background-bookshelf-library-ancient-books-as-symbol-knowledge-history-218640948.jpg',
+          ),
         ),
         const SizedBox(height: 43),
         const Text(
