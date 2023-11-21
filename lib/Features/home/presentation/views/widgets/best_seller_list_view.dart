@@ -22,11 +22,15 @@ class NewestBooksListView extends StatelessWidget {
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
-                  child: BookListViewItem(bookModel: state.books[index]),
+                  child: BookListViewItem(
+                    bookModel: state.books[index],
+                  ),
                 );
               });
         } else if (state is NewestBooksFailure) {
-          return CustomErrorWidget(errorMessage: state.errMessage);
+          return CustomErrorWidget(
+            errorMessage: state.errMessage,
+          );
         } else {
           return const CustomLoadingIndicator();
         }
