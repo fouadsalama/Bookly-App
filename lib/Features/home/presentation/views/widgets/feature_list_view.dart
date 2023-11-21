@@ -4,7 +4,7 @@ import 'package:bookly_app/core/widgets/custom_loading_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'custom_book_list_view_item.dart';
+import 'custom_book_image.dart';
 
 class FeatureBooksListView extends StatelessWidget {
   const FeatureBooksListView({
