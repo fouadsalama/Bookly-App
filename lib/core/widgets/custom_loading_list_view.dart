@@ -74,7 +74,7 @@ class CustomLoadingBorder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 50,
-      height: 50,
+      height: 30,
       decoration: BoxDecoration(
         color: Colors.grey,
         borderRadius: BorderRadius.circular(16),
