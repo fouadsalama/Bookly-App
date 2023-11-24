@@ -42,7 +42,9 @@ class BooksDetailsSection extends StatelessWidget {
           count: bookModel.volumeInfo.pageCount ?? 0,
         ),
         const SizedBox(height: 37),
-        const BookAction(),
+        BookAction(
+          bookModel: bookModel,
+        ),
       ],
     );
   }
