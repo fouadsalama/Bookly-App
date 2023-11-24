@@ -4,7 +4,7 @@ import '../../../../../core/utils/styles.dart';
 
 class BookRating extends StatelessWidget {
   const BookRating({super.key, required this.rating, required this.count});
-  final int rating;
+  final num rating;
   final int count;
   @override
   Widget build(BuildContext context) {
