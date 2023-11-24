@@ -1,7 +1,7 @@
-import 'package:bookly_app/Features/home/presentation/manger/cubit/similar_books_cubit.dart';
 import 'package:bookly_app/core/widgets/custom_error_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import '../../../../../core/utils/manger/similar_books_cubit/similar_books_cubit.dart';
 import 'custom_book_image.dart';
 
 class SimilarBooksListView extends StatelessWidget {

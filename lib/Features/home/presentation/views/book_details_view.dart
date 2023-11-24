@@ -1,8 +1,8 @@
 import 'package:bookly_app/Features/home/data/models/book_model/book_model.dart';
-import 'package:bookly_app/Features/home/presentation/manger/cubit/similar_books_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/utils/manger/similar_books_cubit/similar_books_cubit.dart';
 import 'widgets/book_details_view_body.dart';
 
 class BookDetailsView extends StatefulWidget {
