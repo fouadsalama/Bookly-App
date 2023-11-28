@@ -1,5 +1,3 @@
-// ignore_for_file: avoid_print
-
 import 'package:bookly_app/Features/home/data/models/book_model/book_model.dart';
 import 'package:bookly_app/Features/home/data/repos/home_repo.dart';
 import 'package:bookly_app/core/errors/failure.dart';
@@ -22,7 +20,7 @@ class HomeRepoImpl implements HomeRepo {
         try {
           books.add(BookModel.fromJson(item));
         } catch (e) {
-          print(item);
+          throw Exception(e.toString());
         }
       }
       return right(books);
