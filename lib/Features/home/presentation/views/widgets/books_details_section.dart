@@ -19,17 +19,17 @@ class BooksDetailsSection extends StatelessWidget {
             horizontal: width * 0.17,
           ),
           child: CustomBookImage(
-            imageUrl: bookModel.volumeInfo.imageLinks.thumbnail,
+            imageUrl: bookModel.volumeInfo!.imageLinks.thumbnail,
           ),
         ),
         const SizedBox(height: 43),
         Text(
-          bookModel.volumeInfo.title!,
+          bookModel.volumeInfo!.title!,
           style: Styles.textStyle30,
           textAlign: TextAlign.center,
         ),
         Text(
-          bookModel.volumeInfo.authors![0],
+          bookModel.volumeInfo!.authors![0],
           style: Styles.textStyle18.copyWith(
             fontWeight: FontWeight.w500,
             fontStyle: FontStyle.italic,
@@ -39,7 +39,7 @@ class BooksDetailsSection extends StatelessWidget {
         const SizedBox(height: 16),
         BookRating(
           rating: 0,
-          count: bookModel.volumeInfo.pageCount ?? 0,
+          count: bookModel.volumeInfo!.pageCount ?? 0,
         ),
         const SizedBox(height: 37),
         BookAction(

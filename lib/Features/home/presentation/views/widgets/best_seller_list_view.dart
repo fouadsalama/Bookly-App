@@ -16,7 +16,7 @@ class NewestBooksListView extends StatelessWidget {
           return ListView.builder(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              itemCount: 10,
+              itemCount: state.books.length,
               padding: EdgeInsets.zero,
               itemBuilder: (context, index) {
                 return Padding(

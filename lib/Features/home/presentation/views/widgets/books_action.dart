@@ -28,7 +28,7 @@ class BookAction extends StatelessWidget {
               onPressed: () {
                 launchCustomUrl(
                   context: context,
-                  uri: bookModel.volumeInfo.previewLink!,
+                  uri: bookModel.volumeInfo!.previewLink!,
                 );
               },
               fontSize: 16,
